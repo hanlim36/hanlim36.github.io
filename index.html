@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호반써밋 풍무Ⅱ 입주민 모바일 가이드</title>
+    <style>
+        /* 기본 스타일 리셋 및 폰트 설정 */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #f5f7fa; 
+            padding: 15px;
+        }
+        
+        /* 메인 컨테이너 (모바일 가독성 최적화) */
+        .container { 
+            max-width: 500px; 
+            margin: 0 auto; 
+            background: #fff; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            overflow: hidden;
+        }
+        
+        /* 헤더 스타일 */
+        .header { 
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6); 
+            color: #fff; 
+            padding: 25px 20px; 
+            text-align: center;
+        }
+        .header h1 { font-size: 20px; font-weight: 700; margin-bottom: 5px; }
+        .header p { font-size: 13px; opacity: 0.9; }
+        
+        /* 섹션 및 카드 스타일 */
+        .section { padding: 20px; border-bottom: 1px solid #edf2f7; }
+        .section:last-child { border-bottom: none; }
+        .section-title { 
+            font-size: 16px; 
+            font-weight: 700; 
+            color: #1e3a8a; 
+            margin-bottom: 15px; 
+            display: flex; 
+            align-items: center; 
+        }
+        
+        /* 리스트 및 강조 스타일 */
+        ul { list-style: none; }
+        li { margin-bottom: 12px; font-size: 14px; position: relative; padding-left: 15px; }
+        li::before { 
+            content: "•"; 
+            color: #3b82f6; 
+            font-weight: bold; 
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+        }
+        strong { color: #111; }
+        
+        /* 강조 박스 (💡 꿀팁/노트) */
+        .tip-box { 
+            background-color: #eff6ff; 
+            border-left: 4px solid #3b82f6; 
+            padding: 12px; 
+            border-radius: 4px; 
+            font-size: 13px; 
+            margin-top: 10px; 
+        }
+        .tip-box strong { color: #1d4ed8; }
+        
+        /* 테이블 스타일 (옵션 가이드용) */
+        .option-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 10px; 
+            font-size: 13px; 
+        }
+        .option-table th, .option-table td { 
+            padding: 10px; 
+            border: 1px solid #e2e8f0; 
+            text-align: left; 
+        }
+        .option-table th { background-color: #f8fafc; font-weight: 700; color: #475569; }
+        .option-table td:first-child { font-weight: 600; color: #1e293b; width: 35%; }
+        
+        /* 하단 푸터 및 링크 */
+        .footer { background: #f8fafc; padding: 15px; text-align: center; font-size: 12px; color: #64748b; }
+        .btn-link { 
+            display: inline-block; 
+            padding: 8px 15px; 
+            background-color: #1e3a8a; 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            margin-top: 8px; 
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .btn-link:hover { background-color: #111827; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <div class="header">
+        <h1>호반써밋 풍무Ⅱ 입주민 모바일 가이드</h1>
+        <p>단톡방 대화 기반 핵심 정보 요약 가이드 v2</p>
+    </div>
+
+    <!-- 섹션 1: 일정 및 자금 -->
+    <div class="section">
+        <div class="section-title">📅 주요 일정 및 자금 타임라인</div>
+        <ul>
+            <li><strong>정당 계약 기간:</strong> 2026.06.22(월) ~ 06.25(목) *평일 진행, 연차 필수</li>
+            <li><strong>1차 계약금 납부:</strong> 지정 가상계좌로 1,000만 원 입금 (당일 오전 이체 권장)</li>
+            <li><strong>발코니 확장 계약금:</strong> 총비용의 10% 별도 계좌 입금 *오입금 주의</li>
+            <li><strong>2차 계약금 마감:</strong> 2026.07.27(월)까지 계약금 잔액 완납</li>
+            <li><strong>옵션 계약 시기:</strong> 2026년 8월 ~ 9월 예정 (중도금 1차 실행 전)</li>
+        </ul>
+        <div class="tip-box">
+            💡 <strong>중도금 대출 이자후불제 꿀팁:</strong><br>
+            실거주 목적으로 여유 자금이 있다면 대출 기간이 가장 길어 이자가 많이 쌓이는 <strong>1회차~2회차 중도금을 자납(중도상환)</strong>하는 것이 이자 절감에 가장 유리합니다.
+        </div>
+    </div>
+
+    <!-- 섹션 2: 필수 구비서류 -->
+    <div class="section">
+        <div class="section-title">📝 정당 계약 시 필수 구비서류</div>
+        <ul>
+            <li><strong>신분증 및 인감도장:</strong> 본인 방문 시 필수 (대리인 위임 시 인감증명서 추가)</li>
+            <li><strong>전자수입인지 (75,000원):</strong> 84㎡형 기준 75,000원권 준비 (우체국 또는 온라인 발급)</li>
+            <li><strong>자금조달계획서:</strong> 비규제지역이므로 세세한 증빙 불필요, 현장 직원이 작성 조율 지원</li>
+            <li><strong>무통장 입금증:</strong> 모바일 뱅킹 이체 내역 화면 캡처본으로 대체 가능</li>
+        </ul>
+    </div>
+
+    <!-- 섹션 3: 옵션 선택 가이드 -->
+    <div class="section">
+        <div class="section-title">🎨 옵션 선택 및 인테리어 가이드</div>
+        <table class="option-table">
+            <thead>
+                <tr>
+                    <th>옵션 항목</th>
+                    <th>입주민 선호도 및 팁</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>발코니 확장</td>
+                    <td><strong>[필수]</strong> 미확장 시 공간 협소, 마옵 선택 시에도 확장 불가</td>
+                </tr>
+                <tr>
+                    <td>시스템 에어컨</td>
+                    <td><strong>[옵션 추천]</strong> 후시공 시 배관 노출 리스크 및 천장 타공 공사가 커짐</td>
+                </tr>
+                <tr>
+                    <td>현관 중문</td>
+                    <td><strong>[사제 추천]</strong> 시공사 옵션은 디자인 한정 및 고가, 입주 박람회 공구 권장</td>
+                </tr>
+                <tr>
+                    <td>시스클라인</td>
+                    <td><strong>[비추천 많음]</strong> 전열교환기가 기본 설치되므로 거치형 공청기 선호</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 섹션 4: 단지 주요 현안 -->
+    <div class="section">
+        <div class="section-title">🏗️ 84B 타입 현안 및 단지 주요 이슈</div>
+        <ul>
+            <li><strong>84B 타입 가상 VR 오류:</strong> 가상 VR의 '주방 우물천장' 및 '식당 긴창' 표시 오류에 대해 시공사 항의 및 시청 민원 진행 중</li>
+            <li><strong>엘리베이터:</strong> 2개 라인당 엘리베이터 2대 배치 (동당 총 6대, 고층 탑승 지연 최소화)</li>
+            <li><strong>공개공지 관리:</strong> 지상 공공보행통로 내 오토바이 진입 통제 및 금연구역 관리가 주요 과제</li>
+        </ul>
+    </div>
+
+    <!-- 푸터 및 공식 링크 -->
+    <div class="footer">
+        <p>호반써밋 풍무Ⅱ 입주민 공식 네이버 카페</p>
+        <a href="https://cafe.naver.com/hoban2030" target="_blank" class="btn-link">공식 카페 바로가기</a>
+    </div>
+</div>
+
+</body>
+</html>
