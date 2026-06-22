@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[DAY 1] 나트랑 가이드 매뉴얼</title>
+    <style>
+        /* 기본 스타일 리셋 및 폰트 설정 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+        }
+
+        /* 컨테이너 */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        /* 헤더 영역 */
+        .header {
+            background: linear-gradient(135deg, #00a896, #028090);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* 메타 정보 (날짜/시차) */
+        .meta-info {
+            background-color: #f0fdfa;
+            padding: 12px 20px;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            color: #028090;
+            font-weight: bold;
+        }
+
+        /* 타임라인 컨테이너 */
+        .timeline {
+            padding: 20px;
+        }
+
+        /* 개별 일정 카드 (모바일 전용 타임라인 형태) */
+        .timeline-item {
+            position: relative;
+            border-left: 3px solid #00a896;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 10px;
+            border-left: 3px solid transparent; /* 마지막 선은 숨김 */
+        }
+
+        /* 타임라인 점 */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 4px;
+            width: 13px;
+            height: 13px;
+            background-color: #00a896;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+        /* 시간 및 구분 태그 */
+        .time-tag {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+
+        .type-tag {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+
+        /* 일정 제목 */
+        .item-title {
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+
+        /* 세부 활동 지침 */
+        .item-desc {
+            font-size: 0.9rem;
+            color: #4b5563;
+            background-color: #f9fafb;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+
+        /* 가이드 팁 */
+        .item-tip {
+            font-size: 0.8rem;
+            color: #b45309;
+            background-color: #fffbeb;
+            border-left: 3px solid #f59e0b;
+            padding: 6px 10px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* 교통수단 표시 */
+        .transport {
+            font-size: 0.8rem;
+            color: #6b7280;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* 하단 체크리스트 */
+        .checklist-section {
+            background-color: #f8fafc;
+            padding: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .checklist-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .checklist-item {
+            font-size: 0.85rem;
+            color: #475569;
+            margin-bottom: 8px;
+            padding-left: 15px;
+            text-indent: -15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <div class="header">
+        <h1>🌴 나트랑 힐링 여행 가이드</h1>
+        <p>[DAY 1] 나트랑 첫걸음 & 로맨틱 요트 크루즈</p>
+    </div>
+
+    <!-- 날짜 및 시차 정보 -->
+    <div class="meta-info">
+        <span>일정일: 7월 11일</span>
+        <span>⏱️ 베트남 시차: 한국보다 -2시간</span>
+    </div>
+
+    <!-- 타임라인 일정 목록 -->
+    <div class="timeline">
+        
+        <!-- 1번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">06:30 ~ 09:30</span>
+                <span class="type-tag">항공 이동</span>
+            </div>
+            <div class="item-title">한국 공항 출발 ➡️ 깜란 국제공항 도착</div>
+            <div class="transport">✈️ 항공기 이동</div>
+            <div class="item-desc">입국 심사 진행 후 수하물 수령, 세관 통과 후 공항 밖으로 이동합니다.</div>
+            <div class="item-tip">💡 베트남은 45일 무비자 입국이 가능하여 입국 신고서를 쓰지 않아도 됩니다!</div>
+        </div>
+
+        <!-- 2번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">09:30 ~ 11:30</span>
+                <span class="type-tag">호텔 이동</span>
+            </div>
+            <div class="item-title">시내 호텔 이동 및 짐 보관</div>
+            <div class="transport">🚗 그랩(Grab) 또는 공항 픽업 차량</div>
+            <div class="item-desc">호텔 프런트에 예약 바우처를 보여주고 캐리어를 안전하게 위탁합니다. (짐 보관증 수령 필수)</div>
+            <div class="item-tip">💡 아직 얼리 체크인 전이므로 "Keep my luggage, please"라고 편하게 요청하세요. 시원한 옷차림 환복 추천!</div>
+        </div>
+
+        <!-- 3번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">11:30 ~ 12:00</span>
+                <span class="type-tag">환전</span>
+            </div>
+            <div class="item-title">시내 금은방 환전 및 식당 이동</div>
+            <div class="transport">🏃 도보 이동</div>
+            <div class="item-desc">마담프엉 인근의 유명 금은방(김청, 김빈 등)에 들러 사용할 현지 화폐를 환전합니다.</div>
+        </div>
+
+        <!-- 4번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">12:00 ~ 13:30</span>
+                <span class="type-tag">점심 식사</span>
+            </div>
+            <div class="item-title">[중식] 마담프엉 (Madame Phuong)</div>
+            <div class="transport">🏃 도보 이동</div>
+            <div class="item-desc">에어컨이 빵빵하고 깔끔한 프리미엄 퓨전 베트남 레스토랑에서 첫 현지식을 즐깁니다. (추천: 반쎄오, 쌀국수, 분짜)</div>
+            <div class="item-tip">💡 점심 피크 타임에는 약간의 웨이팅이 있을 수 있습니다.</div>
+        </div>
+
+        <!-- 5번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">13:30 ~ 17:00</span>
+                <span class="type-tag">자유 일정</span>
+            </div>
+            <div class="item-title">오후 자유 선택 (더위 피하기)</div>
+            <div class="transport">🏃 도보 / 🚗 그랩 이용</div>
+            <div class="item-desc">
+                • <b>[A코스]</b> CCCP 또는 콩카페에서 시원한 코코넛 커피 휴식<br>
+                • <b>[B코스]</b> 시내 브랜드 스파에서 60-90분 마사지 (가이드 강추👍)<br>
+                • <b>[C코스]</b> 핑크타워 및 나트랑 해변 산책 (양산 필수)
+            </div>
+            <div class="item-tip">💡 7월 오후 2시~5시는 매우 무덥습니다. 쾌적한 실내 코스(A, B)를 적극 추천합니다!</div>
+        </div>
+
+        <!-- 6번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">17:00 ~ 17:30</span>
+                <span class="type-tag">이동</span>
+            </div>
+            <div class="item-title">앰배서더 클럽 요트 선착장 출발</div>
+            <div class="transport">🚗 그랩(Grab) 택시 (약 20분 소요)</div>
+            <div class="item-desc">호텔에서 잠시 정돈 후, 요트 승선을 위해 퇴근 정체를 감안하여 17:00 정각에 택시를 탑승합니다.</div>
+        </div>
+
+        <!-- 7번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">17:30 ~ 21:00</span>
+                <span class="type-tag">저녁 식사</span>
+            </div>
+            <div class="item-title">[석식] 앰배서더 요트 디너 크루즈</div>
+            <div class="transport">🚢 앰배서더 클럽 크루즈</div>
+            <div class="item-desc">황홀한 일몰과 야경을 배경으로 고급 해산물·고기 BBQ 뷔페와 라이브 선상 공연을 감상합니다.</div>
+            <div class="item-tip">💡 저녁 바닷바람이 선선할 수 있으니 얇은 가디건을 꼭 챙기세요. 리조트룩 소장 필수!</div>
+        </div>
+
+        <!-- 8번 일정 -->
+        <div class="timeline-item">
+            <div>
+                <span class="time-tag">21:00 ~</span>
+                <span class="type-tag">일정 종료</span>
+            </div>
+            <div class="item-title">호텔 귀가 및 체크인 완료</div>
+            <div class="transport">🚗 그랩(Grab) 택시 이용</div>
+            <div class="item-desc">크루즈 입항 후 택시로 숙소 이동, 객실 체크인을 마치고 첫날 일정을 편안하게 마무리합니다.</div>
+        </div>
+
+    </div>
+
+    <!-- 하단 가이드 체크리스트 -->
+    <div class="checklist-section">
+        <div class="checklist-title">🎒 가이드의 최종 체크리스트</div>
+        <div class="checklist-item">✔️ <b>그랩(Grab) 앱 사전 연동:</b> 한국에서 결제 카드를 미리 등록해두시면 잔돈 걱정 없이 자동 결제되어 정말 편리합니다.</div>
+        <div class="checklist-item">✔️ <b>보조 배터리 지참:</b> 요트 크루즈에서 인생 선셋 사진을 많이 찍게 되므로 충전 상태를 꼭 확인하세요!</div>
+    </div>
+</div>
+
+</body>
+</html>
